@@ -39,13 +39,14 @@ public class ExampleThreads {
         //  Esto pisa de frente el progra
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         Thread.startVirtualThread(() -> {
             System.out.println("Virtual Thread 1: " + Thread.currentThread());
         });
         Thread.startVirtualThread(() -> {
             System.out.println("Virtual Thread 2: " + Thread.currentThread());
         });
+        Thread.sleep(100);
         //https://dev.to/elayachiabdelmajid/java-21-virtual-threads-1h5b
     }
     /*
