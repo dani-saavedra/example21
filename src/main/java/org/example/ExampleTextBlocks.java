@@ -17,11 +17,11 @@ public class ExampleTextBlocks {
 
     }
 
-    public String query() {
+    public String query(boolean active) {
         return """
                 SELECT id, name, email
                 FROM users
-                WHERE status = 'active'
+                WHERE status = active
                 ORDER BY name;
                 """;
     }

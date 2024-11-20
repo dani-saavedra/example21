@@ -3,8 +3,9 @@ package org.example;
 import static java.lang.StringTemplate.STR;
 
 import java.text.MessageFormat;
+
 /*
-Introduce in Java 21 with preview
+    Introduce in Java 21 with preview
  */
 public class ExampleStringTemplate {
 

@@ -18,6 +18,7 @@ public class ExampleListOf {
         //No completamente inmutable: Aunque el tamaño de la lista no puede cambiar,
         // puedes modificar los elementos existentes.
 
+        String[] lista3 = {"Java", "Python", "Kotlin"};
 
     }
 }

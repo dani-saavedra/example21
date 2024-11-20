@@ -7,7 +7,7 @@ package org.example;
 public class SwitchImprovment {
     /*
 
-    Característica	                Java 8	                             Java 21
+    Característica	                Java 8	                             Java 14
     Soporte para Expresiones	Solo como sentencia (statement).	    Puede ser usado como expresión.
     Retorno de Valores          Manual usando variables intermedias.	Uso directo de yield para retornar valores.
     Pattern Matching	        No disponible.	                        Disponible con case (ej. instanceof).
@@ -56,7 +56,6 @@ public class SwitchImprovment {
         //Reemplaza el uso de variables temporales o intermedias para asignar valores en bloques complejos.
         //En lugar de usar return (que no es válido dentro de un switch como expresión) o manejar lógicas redundantes,
         // yield asegura que cada bloque pueda proporcionar un valor de manera directa.
-
         String dayType = switch (day) {
             case 1, 2, 3, 4, 5 -> "Weekday";
             case 6, 7 -> "Weekend";

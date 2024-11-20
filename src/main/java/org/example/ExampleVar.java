@@ -11,7 +11,7 @@ public class ExampleVar {
 
     //Puedes usar var en métodos, bloques de inicialización y controladores try-with-resources.
     public void metodo() {
-        var nombre = "Alice"; // Válido: Variable local
+        String nombre = "Alice"; // Válido: Variable local
 
         /*
         var nombre; // Error: Falta inicialización
@@ -33,8 +33,12 @@ public class ExampleVar {
         Map<String, List<Integer>> mapa = new HashMap<>(); // Antes
         var mapa2 = new HashMap<String, List<Integer>>();   // Ahora
 
+        int numero = 1;
         //Mas fácil de leer
         var nombres = List.of("Alice", "Bob", "Charlie");
+    }
 
+    public String metodo3() {
+        return "daniel";
     }
 }
